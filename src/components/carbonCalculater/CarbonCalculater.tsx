@@ -44,7 +44,7 @@ export default function CarbonCalculator() {
   const iconRef = useRef<HTMLDivElement>(null);
   const categoryRef = useRef<HTMLHeadingElement>(null);
   const questionRef = useRef<HTMLParagraphElement>(null);
-  const buttonsRef = useRef<React.RefObject<HTMLButtonElement>[]>([]);
+  const buttonsRef = useRef<React.RefObject<HTMLButtonElement | null>[]>([]);
   const backButtonRef = useRef<HTMLButtonElement>(null);
   const nextButtonRef = useRef<HTMLButtonElement>(null);
   const timelineRef = useRef<GSAPTimeline | null>(null); // Timeline'ı saklamak için

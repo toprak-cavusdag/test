@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 
 const ConfettiCelebration = () => {
   const containerRef = useRef<HTMLDivElement>(null);
-  let interval: NodeJS.Timeout;
+  let interval: ReturnType<typeof setInterval>; 
 
   useEffect(() => {
     if (!containerRef.current) return;
@@ -18,10 +18,10 @@ const ConfettiCelebration = () => {
 
       for (let i = 0; i < particles; i++) {
         const confetti = document.createElement("div");
-        const size = Math.random() * 6 + 4; // Rastgele boyutlar
+        const size = Math.random() * 6 + 4; 
         confetti.className = "absolute rounded-md";
         confetti.style.width = `${size}px`;
-        confetti.style.height = `${size * (Math.random() > 0.5 ? 0.4 : 1)}px`; // Dikdörtgen ve kare konfetiler
+        confetti.style.height = `${size * (Math.random() > 0.5 ? 0.4 : 1)}px`; 
         confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
         confetti.style.left = `${Math.random() * 100}%`;
         confetti.style.top = "-2%";
@@ -31,7 +31,7 @@ const ConfettiCelebration = () => {
         gsap.to(confetti, {
           y: "100vh", 
           x: (Math.random() - 0.5) * 200,
-          rotation: Math.random() * 360, // Döndürme efekti
+          rotation: Math.random() * 360, 
           duration: duration + Math.random(),
           ease: "power1.in",
           onComplete: () => confetti.remove(),

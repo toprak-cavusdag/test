@@ -31,7 +31,6 @@ const FinalPage: React.FC<FinalPageProps> = ({
   useEffect(() => {
     const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
 
-    // Kartın giriş animasyonu
     if (containerRef.current) {
       tl.fromTo(
         containerRef.current,
@@ -52,8 +51,7 @@ const FinalPage: React.FC<FinalPageProps> = ({
       }
     });
 
-    // Rozet için özel bir vurgu animasyonu
-    const badgeEl = elementsRef.current[2]; // Rozet resmi
+    const badgeEl = elementsRef.current[2]; 
     if (badgeEl) {
       tl.to(
         badgeEl,
