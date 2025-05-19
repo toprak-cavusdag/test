@@ -1,0 +1,222 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "category": "Ulaşım",
+      "question": "Haftada ortalama ne kadar araba kullanıyorsunuz?",
+      "icon": "/icon/car.png",
+      "options": [
+        { "text": "Hiç kullanmıyorum", "value": 0 },
+        { "text": "Günde 5-10 dakika", "value": 5 },
+        { "text": "Günde 30 dakika", "value": 15 },
+        { "text": "Her yere arabayla giderim", "value": 30 }
+      ]
+    },
+    {
+      "id": 2,
+      "category": "Ulaşım",
+      "question": "Arabanız hangi yakıtı kullanıyor?",
+      "icon": "/icon/fuel.png",
+      "options": [
+        { "text": "Elektrik", "value": 2 },
+        { "text": "Hibrit (elektrik + benzin)", "value": 5 },
+        { "text": "Benzin", "value": 15 },
+        { "text": "Dizel", "value": 20 }
+      ]
+    },
+    {
+      "id": 3,
+      "category": "Ulaşım",
+      "question": "Toplu taşıma ne kadar kullanıyorsunuz?",
+      "icon": "/icon/bus.png",
+      "options": [
+        { "text": "Her gün", "value": 1 },
+        { "text": "Haftada birkaç kez", "value": 3 },
+        { "text": "Ayda birkaç kez", "value": 5 },
+        { "text": "Hiç kullanmam", "value": 10 }
+      ]
+    },
+    {
+      "id": 4,
+      "category": "Ulaşım",
+      "question": "Senede kaç kere uçağa biniyorsunuz?",
+      "icon": "/icon/plane-ticket.png",
+      "options": [
+        { "text": "Hiç", "value": 0 },
+        { "text": "1-2 kez", "value": 100 },
+        { "text": "3-5 kez", "value": 300 },
+        { "text": "6’dan fazla", "value": 600 }
+      ]
+    },
+    {
+      "id": 5,
+      "category": "Ev Enerjisi",
+      "question": "Evde elektrik faturanız genelde ne kadar geliyor?",
+      "icon": "/icon/electrical.png",
+      "options": [
+        { "text": "250 TL altı", "value": 5 },
+        { "text": "250-500 TL arası", "value": 10 },
+        { "text": "500-1000 TL arası", "value": 20 },
+        { "text": "1000 TL ve üzeri", "value": 40 }
+      ]
+    },
+    {
+      "id": 6,
+      "category": "Ev Enerjisi",
+      "question": "Evi neyle ısıtıyorsunuz?",
+      "icon": "/icon/heating.png",
+      "options": [
+        { "text": "Güneş paneli", "value": 0 },
+        { "text": "Doğalgaz", "value": 20 },
+        { "text": "Elektrikli ısıtıcı", "value": 25 },
+        { "text": "Soba (kömür/odun)", "value": 40 }
+      ]
+    },
+    {
+      "id": 7,
+      "category": "Ev Enerjisi",
+      "question": "Kışın evdeki ısı genelde kaç derece?",
+      "icon": "/icon/temperature.png",
+      "options": [
+        { "text": "18°C altı", "value": 5 },
+        { "text": "18-20°C", "value": 10 },
+        { "text": "20-22°C", "value": 20 },
+        { "text": "22°C ve üzeri", "value": 30 }
+      ]
+    },
+    {
+      "id": 8,
+      "category": "Ev Enerjisi",
+      "question": "Evde tasarruflu ampul ve cihaz kullanıyor musunuz?",
+      "icon": "/icon/idea.png",
+      "options": [
+        { "text": "Evet, hepsi", "value": 0 },
+        { "text": "Çoğu", "value": 5 },
+        { "text": "Bir kısmı", "value": 10 },
+        { "text": "Hayır", "value": 15 }
+      ]
+    },
+    {
+      "id": 9,
+      "category": "Beslenme",
+      "question": "Ne sıklıkla et veya süt ürünü tüketiyorsunuz?",
+      "icon": "/icon/food.png",
+      "options": [
+        { "text": "Her gün", "value": 25 },
+        { "text": "Haftada birkaç gün", "value": 15 },
+        { "text": "Ayda birkaç kez", "value": 5 },
+        { "text": "Hiç tüketmem", "value": 0 }
+      ]
+    },
+    {
+      "id": 10,
+      "category": "Beslenme",
+      "question": "Haftada ne kadar yemek/artık çöpe gidiyor?",
+      "icon": "/icon/waste.png",
+      "options": [
+        { "text": "Hiç ya da çok az", "value": 5 },
+        { "text": "Yarım poşet kadar", "value": 10 },
+        { "text": "1 poşet kadar", "value": 20 },
+        { "text": "2 poşetten fazla", "value": 40 }
+      ]
+    },
+    {
+      "id": 11,
+      "category": "Beslenme",
+      "question": "Hazır/paketli yiyecekleri ne sıklıkla tüketirsiniz?",
+      "icon": "/icon/snacks.png",
+      "options": [
+        { "text": "Her gün", "value": 20 },
+        { "text": "Haftada birkaç gün", "value": 10 },
+        { "text": "Ayda birkaç kez", "value": 5 },
+        { "text": "Hiç tüketmem", "value": 0 }
+      ]
+    },
+    {
+      "id": 12,
+      "category": "Beslenme",
+      "question": "Organik veya pazardan ürün alıyor musunuz?",
+      "icon": "/icon/organic.png",
+      "options": [
+        { "text": "Evet, hep öyle alırım", "value": 2 },
+        { "text": "Genelde öyle alırım", "value": 5 },
+        { "text": "Ara sıra alırım", "value": 10 },
+        { "text": "Hiç dikkat etmem", "value": 15 }
+      ]
+    },
+    {
+      "id": 13,
+      "category": "Tüketim",
+      "question": "Yılda kaç kere yeni kıyafet alırsınız?",
+      "icon": "/icon/clothes.png",
+      "options": [
+        { "text": "Yılda 3’ten az", "value": 5 },
+        { "text": "Yılda 4–10 arası", "value": 15 },
+        { "text": "Ayda 1–2 defa", "value": 25 },
+        { "text": "Her hafta alırım", "value": 35 }
+      ]
+    },
+    {
+      "id": 14,
+      "category": "Tüketim",
+      "question": "Yeni telefon, tablet, bilgisayar gibi şeyleri ne kadar sık alırsınız?",
+      "icon": "/icon/responsive.png",
+      "options": [
+        { "text": "Yılda 1 kez veya daha az", "value": 5 },
+        { "text": "2–3 kez", "value": 15 },
+        { "text": "4–5 kez", "value": 25 },
+        { "text": "Yılda 6 kezden fazla", "value": 35 }
+      ]
+    },
+    {
+      "id": 15,
+      "category": "Tüketim",
+      "question": "Evde geri dönüşüm (plastik, cam, kağıt) yapıyor musunuz?",
+      "icon": "/icon/recycle.png",
+      "options": [
+        { "text": "Her zaman", "value": 0 },
+        { "text": "Bazen", "value": 5 },
+        { "text": "Nadiren", "value": 10 },
+        { "text": "Hiç yapmam", "value": 15 }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "range": "0-150",
+      "badge": "Yeşil Kahraman",
+      "award": "/awards/yesil_kahraman.png",
+      "emoji": "🌱",
+      "title": "Gezegeni koruyorsun!",
+      "description": "Karbon ayak izin çok düşük. Doğayla uyumlu yaşıyorsun.",
+      "advice": "Bu örnek yaşam tarzını çevrenle paylaş, ilham ol."
+    },
+    {
+      "range": "151-300",
+      "badge": "Çevre Dostu",
+      "award": "/awards/cevre_dostu.png",
+      "emoji": "🌿",
+      "title": "Doğanın yanında yer alıyorsun.",
+      "description": "Küçük adımlarla daha da iyi olabilirsin.",
+      "advice": "Enerji tasarrufu, toplu taşıma ve geri dönüşümle gelişmeye devam et."
+    },
+    {
+      "range": "301-450",
+      "badge": "Karbon Yolcusu",
+      "award": "/awards/karbon_yolcusu.png",
+      "emoji": "🌍",
+      "title": "Yolun başındasın.",
+      "description": "Ortalama üzerindesin. Küçük alışkanlıklar büyük fark yaratır.",
+      "advice": "Et tüketimini azalt, alışverişlerini sadeleştir."
+    },
+    {
+      "range": "451+",
+      "badge": "Karbon Ayak Devi",
+      "award": "/awards/Karbon_ayak_devi.png",
+      "emoji": "🔥",
+      "title": "Gezegen seni izliyor...",
+      "description": "Karbon ayak izin çok yüksek. Değişim zamanı!",
+      "advice": "Yaşam tarzını gözden geçir. Bugün başla, yarın farkı hissedersin."
+    }
+  ]
+}
