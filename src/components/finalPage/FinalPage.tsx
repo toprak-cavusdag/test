@@ -27,7 +27,6 @@ const FinalPage: React.FC<FinalPageProps> = ({
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const elementsRef = useRef<(HTMLDivElement | null)[]>([]);
-  const confettiRef = useRef<any>(null); // Confetti bileşeni için ref
 
   useEffect(() => {
     const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
@@ -68,7 +67,6 @@ const FinalPage: React.FC<FinalPageProps> = ({
       ).to(badgeEl, { scale: 1, duration: 0.3 });
     }
 
-
     const buttonEl = elementsRef.current[7];
     if (buttonEl) {
       tl.to(
@@ -85,7 +83,7 @@ const FinalPage: React.FC<FinalPageProps> = ({
     }
 
     return () => {
-      tl.kill(); 
+      tl.kill();
     };
   }, []);
 
@@ -95,41 +93,71 @@ const FinalPage: React.FC<FinalPageProps> = ({
         ref={containerRef}
         className="p-6 shadow-xl text-center max-w-2xl mx-auto space-y-4"
       >
-        <div ref={(el) => (elementsRef.current[0] = el)}>
+        <div
+          ref={(el) => {
+            elementsRef.current[0] = el;
+          }}
+        >
           <h2 className="text-3xl font-bold">Sonuç</h2>
         </div>
 
-        <div ref={(el) => (elementsRef.current[1] = el)}>
+        <div
+          ref={(el) => {
+            elementsRef.current[1] = el;
+          }}
+        >
           <p className="text-xl">
             Toplam Puanınız: <strong>{totalScore}</strong>
           </p>
         </div>
 
-        <div ref={(el) => (elementsRef.current[2] = el)}>
-          <img
-            src={result.award}
-            className="w-72 h-auto mx-auto"
-            alt="badge"
-          />
+        <div
+          ref={(el) => {
+            elementsRef.current[2] = el;
+          }}
+        >
+          <img src={result.award} className="w-72 h-auto mx-auto" alt="badge" />
         </div>
 
-        <div ref={(el) => (elementsRef.current[3] = el)}>
-          <p className="text-3xl">{result.emoji} {result.badge}</p>
+        <div
+          ref={(el) => {
+            elementsRef.current[3] = el;
+          }}
+        >
+          <p className="text-3xl">
+            {result.emoji} {result.badge}
+          </p>
         </div>
 
-        <div ref={(el) => (elementsRef.current[4] = el)}>
+        <div
+          ref={(el) => {
+            elementsRef.current[4] = el;
+          }}
+        >
           <p className="text-xl text-gray-700">{result.title}</p>
         </div>
 
-        <div ref={(el) => (elementsRef.current[5] = el)}>
+        <div
+          ref={(el) => {
+            elementsRef.current[5] = el;
+          }}
+        >
           <p className="text-lg text-gray-500 italic">{result.description}</p>
         </div>
 
-        <div ref={(el) => (elementsRef.current[6] = el)}>
+        <div
+          ref={(el) => {
+            elementsRef.current[6] = el;
+          }}
+        >
           <p className="text-gray-400">{result.advice}</p>
         </div>
 
-        <div ref={(el) => (elementsRef.current[7] = el)}>
+        <div
+          ref={(el) => {
+            elementsRef.current[7] = el;
+          }}
+        >
           <Button className="mt-6 bg-black text-white" onClick={onRestart}>
             Tekrar Başla
           </Button>
