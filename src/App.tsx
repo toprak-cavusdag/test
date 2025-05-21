@@ -3,7 +3,6 @@ import useAntiInspect from "./helper/useAntiInspect";
 
 const App = () => {
     useAntiInspect();
-
   return (
     <>
       <CarbonCalculator />
