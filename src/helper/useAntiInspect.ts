@@ -16,19 +16,6 @@ const useAntiInspect = () => {
       }
     };
     window.addEventListener("keydown", handleKeyDown);
-
-    const preventTouchHold = (e: TouchEvent) => e.preventDefault();
-    document.addEventListener("touchstart", preventTouchHold, { passive: false });
-    document.addEventListener("touchmove", preventTouchHold, { passive: false });
-    document.addEventListener("touchend", preventTouchHold, { passive: false });
-
-    return () => {
-      document.removeEventListener("contextmenu", handleContextMenu);
-      window.removeEventListener("keydown", handleKeyDown);
-      document.removeEventListener("touchstart", preventTouchHold);
-      document.removeEventListener("touchmove", preventTouchHold);
-      document.removeEventListener("touchend", preventTouchHold);
-    };
   }, []);
 };
 
