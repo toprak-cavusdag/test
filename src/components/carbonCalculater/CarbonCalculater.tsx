@@ -181,15 +181,6 @@ export default function CarbonCalculator() {
     else setFinished(true);
   };
 
-  const handleBack = () => {
-    if (isAnimating || step === 0) return;
-    setStep(step - 1);
-  };
-
-  const goToNextStep = () => {
-    if (isAnimating || step === questions.length - 1) return;
-    setStep(step + 1);
-  };
 
   const goToStep = (stepIndex: number) => {
     if (isAnimating || stepIndex >= questions.length || stepIndex < 0 || stepIndex > step) return;
@@ -292,7 +283,7 @@ export default function CarbonCalculator() {
                 ) : null;
               })}
           </div>
-          
+
         </Card>
       ) : (
         <FinalPage
