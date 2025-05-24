@@ -292,28 +292,7 @@ export default function CarbonCalculator() {
                 ) : null;
               })}
           </div>
-
-          <div className="mt-16 flex justify-center items-center mx-auto w-fit gap-10">
-            <Button
-              variant="outline"
-              onClick={goToNextStep}
-              className="border-black text-black"
-              disabled={step === questions.length - 1 || isAnimating}
-              ref={nextButtonRef}
-            >
-              İleriye Al
-            </Button>
-
-            <Button
-              variant="outline"
-              onClick={handleBack}
-              disabled={step === 0 || isAnimating}
-              ref={backButtonRef}
-              className="border-black text-black"
-            >
-              Geri Dön
-            </Button>
-          </div>
+          
         </Card>
       ) : (
         <FinalPage
